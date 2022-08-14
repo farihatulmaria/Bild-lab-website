@@ -15,10 +15,14 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+button {
+  background: var(--main-hilight-color) !important;
+  border: 0 !important;
+}
 /* header */
 header {
 }
+/* top-bar */
 .top-bar {
   color: #fff;
   background: var(--main-color);
@@ -37,4 +41,12 @@ header {
 .top-dropdown {
   margin: 3px 0;
   border-left: 1px solid var(--white);
+}
+/* widget */
+.header-widget {
+  padding: 10px 0;
+  background: var(--white);
+}
+.offcanvas-menu {
+  background: transparent !important;
 }
