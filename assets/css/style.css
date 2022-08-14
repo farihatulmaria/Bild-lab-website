@@ -5,6 +5,7 @@
 }
 a {
   color: #000;
+  transition: 0.5s;
 }
 a:hover {
   color: #000;
@@ -23,10 +24,6 @@ header {
   background: var(--main-color);
   padding: 10px 0;
 }
-.top-bar h6 {
-}
-.social-icons {
-}
 .social-icons li {
   display: inline-block;
   padding: 10px 4px;
@@ -37,5 +34,7 @@ header {
 .social-icons a:hover {
   color: var(--main-hilight-color);
 }
-.dropdown {
+.top-dropdown {
+  margin: 3px 0;
+  border-left: 1px solid var(--white);
 }
