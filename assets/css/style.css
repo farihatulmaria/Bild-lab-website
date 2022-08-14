@@ -47,6 +47,17 @@ header {
   padding: 10px 0;
   background: var(--white);
 }
+.logo {
+  width: 200px;
+}
+.widgets li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.widgets li svg {
+  font-size: 50px;
+  color: var(--main-hilight-color);
+}
 .offcanvas-menu {
   background: transparent !important;
 }
