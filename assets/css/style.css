@@ -85,6 +85,10 @@ header {
 .menu a {
   color: #fff;
 }
+.menu a:hover,
+.active {
+  color: var(--main-hilight-color) !important;
+}
 .helpline {
   color: #333;
 }
