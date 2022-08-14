@@ -5,6 +5,7 @@
 }
 a {
   color: #000;
+  text-decoration: none !important;
   transition: 0.5s;
 }
 a:hover {
@@ -44,7 +45,7 @@ header {
 }
 /* widget */
 .header-widget {
-  padding: 10px 0;
+  padding: 15px 0;
   background: var(--white);
 }
 .logo {
@@ -60,4 +61,35 @@ header {
 }
 .offcanvas-menu {
   background: transparent !important;
+}
+/* main-menu */
+.main-menu {
+  padding: 30px 0;
+  color: #fff;
+  position: relative;
+}
+.menu-rectangle {
+  background-color: rgb(3, 7, 73);
+  position: absolute;
+  left: -50px;
+  top: 10px;
+  width: 65%;
+  height: 80%;
+  z-index: -1;
+  transform: skew(31deg);
+}
+.menu li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.menu a {
+  color: #fff;
+}
+.helpline {
+  color: #333;
+}
+.helpline svg {
+  font-size: 50px;
+  margin: -14px 7px;
+  color: var(--main-hilight-color);
 }
