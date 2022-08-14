@@ -1,0 +1,41 @@
+:root {
+  --main-color: #030749;
+  --main-hilight-color: #ff5e15;
+  --white: #fff;
+}
+a {
+  color: #000;
+}
+a:hover {
+  color: #000;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+header {
+}
+.top-bar {
+  color: #fff;
+  background: var(--main-color);
+  padding: 10px 0;
+}
+.top-bar h6 {
+}
+.social-icons {
+}
+.social-icons li {
+  display: inline-block;
+  padding: 10px 4px;
+}
+.social-icons a {
+  color: var(--white);
+}
+.social-icons a:hover {
+  color: var(--main-hilight-color);
+}
+.dropdown {
+}
