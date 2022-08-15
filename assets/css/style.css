@@ -3,6 +3,13 @@
   --main-hilight-color: #ff5e15;
   --white: #fff;
 }
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+.hilight-color {
+  color: var(--main-hilight-color);
+}
 a {
   color: #000;
   text-decoration: none !important;
@@ -18,7 +25,22 @@ ul {
 }
 button {
   background: var(--main-hilight-color) !important;
-  border: 0 !important;
+  color: #fff;
+  border: 1px solid transparent !important;
+}
+.main-btn,
+.button-white:hover {
+  background: var(--main-hilight-color) !important;
+  border: 1px solid transparent !important;
+  padding: 10px 30px !important;
+  border-radius: 3px !important;
+  margin-right: 10px;
+  color: #fff !important;
+}
+.main-btn:hover,
+.button-white {
+  color: var(--main-hilight-color) !important;
+  background: var(--white) !important;
 }
 /* header */
 header {
@@ -66,6 +88,7 @@ header {
 .main-menu {
   padding: 30px 0;
   color: #fff;
+  margin-bottom: -9px;
   position: relative;
 }
 .menu-rectangle {
@@ -96,4 +119,50 @@ header {
   font-size: 50px;
   margin: -14px 7px;
   color: var(--main-hilight-color);
+}
+
+/* banner */
+.banner {
+}
+.banner-slider {
+}
+.single-banner {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 0;
+}
+.single-banner::before,
+.single-banner::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color);
+  content: "";
+}
+.single-banner::before {
+  z-index: -1;
+  opacity: 0.502;
+}
+.single-banner::after {
+  z-index: -1;
+  opacity: 0.6;
+}
+.single-banner h1 {
+  font-size: 4rem !important;
+}
+.slick-arrow {
+  display: none !important;
+}
+.banner-text-rectangle {
+  background: rgb(3, 7, 73);
+  opacity: 0.698;
+  position: absolute;
+  left: -220px;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  transform: skew(37deg);
+  z-index: -1;
 }
