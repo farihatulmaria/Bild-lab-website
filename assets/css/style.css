@@ -125,7 +125,7 @@ header {
 .single-banner {
   position: relative;
   overflow: hidden;
-  padding: 300px 0;
+  padding: 250px 0;
 }
 .single-banner::before,
 .single-banner::after {
