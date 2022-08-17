@@ -201,3 +201,19 @@ button {
   z-index: -3;
   content: "";
 }
+/* features */
+.features {
+}
+.single-feature {
+}
+.feature-img {
+}
+.feature-img img {
+  width: 25%;
+}
+.feature-info {
+}
+.feature-info h3 {
+}
+.feature-info p {
+}
