@@ -203,17 +203,19 @@ button {
 }
 /* features */
 .features {
-}
-.single-feature {
-}
-.feature-img {
+  background: #fff;
+  position: relative;
+  margin: -120px 0;
+  padding: 0 5px;
 }
 .feature-img img {
   width: 25%;
 }
-.feature-info {
+.single-feature:hover {
+  box-shadow: 0px 15px 13.7px -35px rgba(0, 0, 0, 0.012),
+    0px 24.7px 23.2px -35px rgba(0, 0, 0, 0.037),
+    0px 77px 35px -35px rgba(0, 0, 0, 0.17);
 }
-.feature-info h3 {
-}
-.feature-info p {
+.single-feature:hover h5 {
+  color: var(--main-hilight-color);
 }
