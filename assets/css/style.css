@@ -81,20 +81,34 @@ button {
   font-size: 50px;
   color: var(--main-hilight-color);
 }
+.offcanvas {
+  background: var(--main-color);
+}
+.offcanvasMenu a {
+  color: #fff;
+}
 .offcanvas-menu {
   background: transparent !important;
 }
-.offcanvasMenu {
-}
 .offcanvasMenu li {
-  padding: 30px;
+  padding: 25px;
   font-size: 20px;
-  border-bottom: 5px solid transparent;
   font-weight: 600;
+  position: relative;
 }
-.offcanvasMenu li:hover {
-  background: var(--main-color);
-  border-bottom: 5px solid var(--main-hilight-color);
+.offcanvasMenu li::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--main-hilight-color);
+  transition: 0.3s;
+  content: "";
+}
+.offcanvasMenu li:hover::after {
+  width: 100%;
+  /* border-bottom: 5px solid var(--main-hilight-color); */
 }
 .offcanvasMenu li:hover a {
   color: var(--main-hilight-color);
