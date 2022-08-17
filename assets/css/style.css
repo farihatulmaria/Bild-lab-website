@@ -3,6 +3,9 @@
   --main-hilight-color: #ff5e15;
   --white: #fff;
 }
+* {
+  transition: 0.5s;
+}
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   font-family: "Fira Sans", sans-serif;
@@ -42,9 +45,6 @@ button {
   color: var(--main-hilight-color) !important;
   background: var(--white) !important;
 }
-/* header */
-header {
-}
 /* top-bar */
 .top-bar {
   color: #fff;
@@ -83,6 +83,21 @@ header {
 }
 .offcanvas-menu {
   background: transparent !important;
+}
+.offcanvasMenu {
+}
+.offcanvasMenu li {
+  padding: 30px;
+  font-size: 20px;
+  border-bottom: 5px solid transparent;
+  font-weight: 600;
+}
+.offcanvasMenu li:hover {
+  background: var(--main-color);
+  border-bottom: 5px solid var(--main-hilight-color);
+}
+.offcanvasMenu li:hover a {
+  color: var(--main-hilight-color);
 }
 /* main-menu */
 .main-menu {
