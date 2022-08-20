@@ -36,6 +36,9 @@ p {
   line-height: 1.6;
   color: var(--text-color);
 }
+svg {
+  transition: -0.1s !important;
+}
 section {
   margin: 80px 0;
 }
@@ -328,16 +331,46 @@ button,
 /* services */
 .services {
 }
+.title-text h2 {
+  font-weight: 900;
+}
 .service {
   position: relative;
   overflow: hidden;
+  z-index: 99;
 }
-.service-overlay {
-  display: none; /* position: absolute;
+.service::after {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; */
+  height: 100%;
+  background: var(--main-color);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.5s;
+  content: "";
+}
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  display: none;
+}
+.service:hover .service-overlay {
+  display: block;
+}
+.service:hover::after {
+  opacity: 0.7;
+}
+.service:hover .main-color {
+  color: var(--main-hilight-color);
+}
+.service:hover p {
+  color: var(--white);
 }
 .service-img img {
   width: 80px;
