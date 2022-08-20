@@ -375,3 +375,8 @@ button,
 .service-img img {
   width: 80px;
 }
+
+/* projects */
+.projects {
+  position: relative;
+}
